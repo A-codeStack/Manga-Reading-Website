@@ -1,0 +1,26 @@
+/* CSS reset */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: #0F0F0F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo_container{
+  background: #FFFFFF;
+  width: 30%;
+  height: 80vh;
+  padding: 10px 20px;
+}
+
+.main li{
+  list-style-position: inside;
+}

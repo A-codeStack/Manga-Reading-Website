@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- BEM - [Block, Element, Modifier] -->
+  <div class="container">
+    <div class="todo_container" id="todo_container">
+
+      <!--Header-->
+      <header class="header">
+      <div class="header_info">
+          <h1 class="header_title" class="header_title">todos</h1>
+          <p class="header_subtext" id="header_subtext">Stay Organized, Stay Productive</p>
+      </div>
+
+      <div class="header_meta">
+          <p class="header_date" id="header_date">Wednesday, Sept 17, 2026</p>
+      </div>
+    </header>
+
+    <!--Main -->
+    <main class="main" id="main">
+      
+      <div class="add-item_container" id="add-item_container">
+        <input class="added_item" type="text">
+        <button class="add_button">Add</button>
+      </div>       
+
+
+      <div class="list_container" id="list_container">
+        <div class="search_container">
+          <input type="text" class="search" placeholder="Search">
+        </div>
+          <ul class="list" id="list">
+            <li class="list_item">
+              <p class="item_title">this is something</p>
+              <button class="delete_button">delete</button>
+            </li>
+          </ul>
+      </div>
+    </main>
+
+    </div>
+  </div>
+  <script src="../scripts/script.js"></script>
+</body>
+</html>
