@@ -3,53 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="">
   <title>Todo App</title>
-  <link rel="stylesheet" href="../css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-  <!-- BEM - [Block, Element, Modifier] -->
-  <div class="container">
-    <div class="todo_container" id="todo_container">
+  
+  <div class="main-container">
 
-      <!--Header-->
-      <header class="header">
-      <div class="header_info">
-          <h1 class="header_title" class="header_title">todos</h1>
-          <p class="header_subtext" id="header_subtext">Stay Organized, Stay Productive</p>
-      </div>
+  <!-- Header -->
+  <header>
+    <div class="header-info">
+      <h1 class="header-title">
+        todos
+      </h1>
+      <p class="header-subtext">
+        Stay Organized, Stay Productive
+      </p>
+    </div>
 
-      <div class="header_meta">
-          <p class="header_date" id="header_date">Wednesday, Sept 17, 2026</p>
-      </div>
-    </header>
+    <div class="header-meta">
+      <p class="header-date">
+        Wednesday, Sept 17, 2026
+      </p>
+    </div>
+  </header>
 
-    <!--Main -->
-    <main class="main" id="main">
-      
-      <div class="add-item_container" id="add-item_container">
-        <input class="added_item" type="text">
-        <button class="add_button">Add</button>
-      </div>       
+  <!--Main-->
+  <main>
+    <div class="search-container">
+      <input type="text" class="search">
+    </div>
 
+    <div class="add-container">
+      <input class="add-input" type="text" placeholder="Add Items">
+      <button class="add-button" id="add-button">Add</button>
+    </div>
 
-      <div class="list_container" id="list_container">
-        <div class="search_container">
-          <input type="text" class="search" placeholder="Search">
-        </div>
-          <ul class="list" id="list">
-            <li class="list_item">
-              <p class="item_title">this is something</p>
-              <button class="delete_button">delete</button>
-            </li>
-          </ul>
-      </div>
-    </main>
+    <div class="list-container">
+      <ul class="list">
+          <li class="list-item">
+            <p>Ariel's World</p>
+            <button class="delete-button">Delete</button>
+            <button class="edit-button">Edit</button>
+            <input type="text" class="edit-input" placeholder="Enter New Title">
+            <button class="submit-edit">Submit</button>
+          </li>
+          <li class="list-item">
+              <p>Ariel's World</p>
+              <button class="delete-button">Delete</button>
+              <button class="edit-button">Edit</button>
+              <input type="text" class="edit-input" placeholder="Enter New Title">
+              <button class="submit-edit">Submit</button>
+          </li>
+      </ul>
 
     </div>
+  </main>
+    
   </div>
+
   <script src="../scripts/script.js"></script>
 </body>
 </html>

@@ -1,26 +1,57 @@
 /* CSS reset */
 *{
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.container{
-  width: 100%;
-  height: 100vh;
-  background: #0F0F0F;
+body{
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #dfebf7;
 }
 
-.todo_container{
+header{
+  margin-bottom: 20px;
+}
+
+header .header-title {
+  background: linear-gradient(90deg, #5B21B6, #4d88cf);
+  -webkit-background-clip: text;
+    background-clip: text;
+  color: transparent;
+}
+
+
+.main-container{
   background: #FFFFFF;
-  width: 30%;
-  height: 80vh;
+  width: 600px;
+  height: 70vh;
   padding: 10px 20px;
+  border-radius: 15px;
 }
 
-.main li{
+main .add-container{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.list-container .list{
   list-style-position: inside;
+}
+
+.list .list-item{
+  display: flex;
+  gap: 4px;
+}
+
+.list-item .edit-input{
+  display: none;
+}
+
+.list-item .submit-edit{
+  display: none;
 }
