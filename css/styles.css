@@ -16,6 +16,9 @@ body{
 
 header{
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 header .header-title {
@@ -39,13 +42,99 @@ main .add-container{
   margin-bottom: 10px;
 }
 
+main .search-container{
+  width: 100%;
+}
+
+.search-container .search{
+  width: 100%;
+  padding: 5px 10px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(109, 108, 108, 0.37);
+  outline: none;
+}
+
+.search-container .search:focus{
+  outline: none;
+  border-color: #5B21B6;
+}
+
 .list-container .list{
   list-style-position: inside;
 }
 
+main .add-container{
+  width: 100%;
+  height: 40px;
+  align-items: stretch;
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.add-container .add-input{
+  flex: 1;
+  outline: none;
+  border: 1px solid rgba(109, 108, 108, 0.622);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.add-container .add-input:focus {
+  outline: none;
+  border-color: #5B21B6;
+}
+.add-container .add-button{
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid rgba(109, 108, 108, 0.61);
+  font-weight: 600;
+  color: white;
+  background: #5B21B6;
+}
+
+.list{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
 .list .list-item{
   display: flex;
-  gap: 4px;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding: 0px 15px;
+  border: 1px solid rgba(109, 108, 108, 0.61);
+  border-radius: 10px;
+}
+
+.list-buttons .button{
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+.list-buttons .delete-button{
+  outline: none;
+  border: 1px solid rgba(195, 4, 4, 0.589);
+  background: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.list-buttons .edit-button {
+  outline: none;
+  color: white;
+  background: #5B21B6;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
 }
 
 .list-item .edit-input{

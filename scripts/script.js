@@ -49,7 +49,7 @@ search.addEventListener('input', (e) => {
   list_items.forEach(item => {
 
     if(item.firstElementChild.textContent.trim().toLowerCase().includes(e.target.value)){
-      item.style.display = "block"
+      item.style.display = ""
     }else{
       item.style.display = "none"
     }
