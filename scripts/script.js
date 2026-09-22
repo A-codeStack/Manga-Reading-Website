@@ -38,7 +38,6 @@ add.addEventListener('click', (e) => {
     li.append(submit_edit)
     ul.prepend(li)
 
-
     input.value = ""
   }
 })
@@ -60,7 +59,6 @@ search.addEventListener('input', (e) => {
 
 ul.addEventListener('click', (e) => {
   if(e.target.className == 'delete-button'){
-    console.log("target hit")
     const Del_button = e.target
     Del_button.closest('.list-item').remove()
   } 
@@ -86,7 +84,6 @@ ul.addEventListener('click', (e) => {
         edit_submit.style.display = "none"
       }
     })
-
   }
 })
 

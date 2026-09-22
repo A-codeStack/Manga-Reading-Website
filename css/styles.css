@@ -114,7 +114,11 @@ main .add-container{
   border-radius: 10px;
 }
 
-.list-buttons .button{
+.list-buttons .edit-button{
+  padding: 5px 10px;
+  font-size: 10px;
+}
+.list-buttons .delete-button{
   padding: 5px 10px;
   font-size: 10px;
 }
