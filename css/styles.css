@@ -114,6 +114,12 @@ main .add-container{
   border-radius: 10px;
 }
 
+
+.list-buttons{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
 .list-buttons .edit-button{
   padding: 5px 10px;
   font-size: 10px;
@@ -147,4 +153,64 @@ main .add-container{
 
 .list-item .submit-edit{
   display: none;
+}
+
+/* 
+Modal Style
+*/
+
+.modal{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.303);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal-title{
+  margin-bottom: 10px;
+}
+
+.modal .modal-title h3{
+  color: #5B21B6;
+  padding-top: 5px;
+}
+
+.modal .modal-content{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  width: 300px;
+}
+
+.modal-content .modal-body input{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.modal-content .modal-body input:active {
+  outline: none;
+}
+.modal-content .modal-body .modal-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.modal-body .modal-buttons button{
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: #5B21B6;
 }
