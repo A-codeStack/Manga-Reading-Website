@@ -66,9 +66,11 @@ search.addEventListener('input', (e) => {
 })
 
 ul.addEventListener('click', (e) => {
+
   if(e.target.className == 'delete-button'){
     const Del_button = e.target
     Del_button.closest('.list-item').remove()
-  } if (e.target.className == 'edit-button'){
+  } else if (e.target.className == 'edit-button'){
+    openModal()
   }
 })
