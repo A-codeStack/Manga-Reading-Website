@@ -66,45 +66,9 @@ search.addEventListener('input', (e) => {
 })
 
 ul.addEventListener('click', (e) => {
-
-
-
   if(e.target.className == 'delete-button'){
     const Del_button = e.target
     Del_button.closest('.list-item').remove()
   } if (e.target.className == 'edit-button'){
-    modal.style.display ="flex"
-    const li = e.target.closest('.list-item')
-    const item_title = li.firstElementChild.firstElementChild.textContent
-    const input_old_title = modal_body.firstElementChild
-    input_old_title.value = item_title
-    modalFunction(input_old_title)
   }
 })
-
-const modalFunction = (old_title) =>{
-  modal.addEventListener('click', (e) => {
-    if (e.target.className.includes('cancel-edit')) {
-      closeModal()
-    } else if (e.target.className.includes('submit-edit')) {
-      console.log("Clicked Submit")
-      old_title = old_title.value
-      old_title = old_title.trim().toLowerCase()
-      const new_title = modal_body.firstElementChild.value
-      if(old_title === new_title.trim().toLowerCase()){
-        alert("No changes detected: submit unsuccesful")
-      }else{
-        modal_body.firstElementChild.value = new_title
-        console.log(modal_body.firstElementChild.value)
-      }
-    }
-  })
-}
-
-let closeModal = () => {
-  modal.style.display = 'none'
-}
-
-let openModal = () =>{
-  modal.style.display = ''
-}
